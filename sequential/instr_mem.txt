@@ -1,0 +1,18 @@
+30 fa 04 00 00 00 00 00 00 00 // Enter the first number (in hex with bytes reversed order)in valC 
+30 fb 06 00 00 00 00 00 00 00 // Enter the second number (in hex with bytes reversed odrer) in valC
+20 a1
+20 b2
+20 20
+61 10
+73 53 00 00 00 00 00 00 00 
+76 44 00 00 00 00 00 00 00
+61 21
+73 53 00 00 00 00 00 00 00
+76 2e 00 00 00 00 00 00 00
+60 21
+20 20
+20 12
+20 01
+70 2e 00 00 00 00 00 00 00
+20 20 // check the R0 value for the gcd of the given first and second number
+00

@@ -1,0 +1,21 @@
+irmovq $4,%rA
+irmovq $6,%rB
+rrmovq %rA,%r1
+rrmovq %rB,%r2
+rrmovq %r2,%r0
+subq %r1,%r0
+je exit
+jg swap
+.gcf
+subq %r2,%r1
+je exit
+jg gcf
+addq %r2,%r1
+.swap
+rrmovq %r2,%r0
+rrmovq %r1,%r2
+rrmovq %r0,%r1
+jmp gcf
+.exit
+rrmovq %r1,%r0
+halt
